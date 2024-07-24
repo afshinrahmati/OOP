@@ -12,6 +12,10 @@ abstract class Person {
     printPersonInfo() {
         console.log(this.name + " " + this.family + " " + this.age);
     }
+    // Wrong
+    // abstract SumAge(n:number) {
+    //    return n*8
+    // };
     abstract SumAge(n:number);
     abstract printId();
 }
@@ -46,3 +50,10 @@ class Teacher  extends Person {
 }
 
 // const p1 = new Person("afshin","rahmati",45) //Cannot create an instance of an abstract class.ts(2511)
+
+const t1 = new Teacher("mehdi","alei",27,1001);
+t1.SumAge(5);
+t1.printId();
+const s1 = new Student("afshin","rahamti",25,2001);
+s1.SumAge(5);
+s1.printId();
