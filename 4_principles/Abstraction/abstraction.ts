@@ -1,4 +1,14 @@
 // that class , make him their children class that implement those methods are abstract;
+// it is like interface.
+// method can be extra method that they are not in abstract class but in interface just use that class are in there or static class
+// we can not call abstract class.
+// we can not full the abstract method on parent.
+// best way:
+// 1) it is good for write pagination.
+// 2) it is good for query builder on database.
+// advantage:
+// 1) hide complex details.
+
 abstract class Person {
     name:string;
     family:string;

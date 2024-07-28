@@ -25,7 +25,16 @@ An instance f a class created with specifically defined data
 # Concept Of OOP
 
 ## 1.Encapsulation
+Encapsulation is one of the fundamental principles of object-oriented programming (OOP) that is also applicable in 
+TypeScript. It refers to the bundling of data (variables) and methods (functions) that operate on the data into a 
+single unit or class. The primary goal of encapsulation is to restrict direct access to some of the 
+object's components and protect the object's integrity by preventing outside interference and misuse.
 
+* public: Members (properties and methods) are accessible from anywhere outside the class. By default, all members in a TypeScript class are public.
+* private: Members are accessible only within the class they are defined in. They cannot be accessed from outside the class.
+* protected: Members are accessible within the class and in subclasses that inherit from the class.
+* Getters and Setters: TypeScript provides a way to define getter and setter methods, allowing controlled access to private properties.
+* Readonly modifier ensures that a property can only be assigned a value at the time of declaration or in the constructor of the same class.
 ## 2.Abstraction
 
 - Abstraction: hide some opreations detail from clients.and the child use them and it doesn't matter for them what happen in there and why exist this method.it is like interface but inerface 100% are Abstratins.
@@ -39,3 +48,11 @@ An instance f a class created with specifically defined data
 ## 3.Inheritance
 
 ## 4.Polymorphism
+
+
+
+
+
+# dependency injection
+--
+In object-oriented programming, instead of creating a new instance of a service every time it is needed, we use dependency injection to manage these dependencies more efficiently. When the application starts, all the required objects are created and managed by a container. For example, in a dependency injection container, the instantiation would look like this: new Company(new Service(new Repository)). This approach allows for easy and efficient use of services throughout the application.
