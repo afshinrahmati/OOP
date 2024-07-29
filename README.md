@@ -36,7 +36,6 @@ object's components and protect the object's integrity by preventing outside int
 * Getters and Setters: TypeScript provides a way to define getter and setter methods, allowing controlled access to private properties.
 * Readonly modifier ensures that a property can only be assigned a value at the time of declaration or in the constructor of the same class.
 ## 2.Abstraction
-
 - Abstraction: hide some opreations detail from clients.and the child use them and it doesn't matter for them what happen in there and why exist this method.it is like interface but inerface 100% are Abstratins.
 - no write to do this a scope for your abstrac class because it is assaginment for children.
 
@@ -46,7 +45,7 @@ object's components and protect the object's integrity by preventing outside int
 -Abstract method can not new.In most object-oriented programming languages that support abstract classes, you cannot directly instantiate an abstract class using the new keyword
 
 ## 3.Inheritance
-
+Inheritance is a fundamental concept in object-oriented programming (OOP) that allows a class (often called a child class or subclass) to inherit attributes and methods from another class (called a parent class or superclass). This mechanism promotes code reuse and a hierarchical class structure, making it easier to maintain and extend software.
 ## 4.Polymorphism
 
 

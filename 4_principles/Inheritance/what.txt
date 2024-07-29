@@ -1,1 +1,0 @@
-that mean you can use class in child an parent
