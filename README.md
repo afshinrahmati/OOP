@@ -50,8 +50,22 @@ Inheritance is a fundamental concept in object-oriented programming (OOP) that a
 
 
 
+# SOLID
+SOLID is acronym that represents five key principle of object programming and design.
+they can help us to created software with understandable,flexible,maintainable
 
-
+## SRP<SINGLE RESPONSIBILITY PRINCIPLE>
+this Principle define that each class has just one Responsible.
+This principle helps in maintaining and understanding the code more efficiently. 
+## OCP<OPEN/CLOSE PRINCIPLE>
+Software entities (class,function,module) should be open for extensions and close for modification.
+You should be able to extend a class's behavior without modifying its source code. // Polymorphism
+## LSP<LISKOV SUBSITUTION PRINCIPLE>
+that mean we have a method in parent class  and subclasses can use that method without change the name and ... just change the there operation
+## ISP<INTERFACE SEGREGATION PRINCIPLE>
+for each class we have an interface
+## DIP<DEPENDENCY INVERSION PRINCIPLE>
+: High-level modules should not depend on low-level modules. Both should depend on abstractions (e.g., interfaces). Abstractions should not depend on details. Details (concrete implementations) should depend on abstractions.
 # dependency injection
 --
 In object-oriented programming, instead of creating a new instance of a service every time it is needed, we use dependency injection to manage these dependencies more efficiently. When the application starts, all the required objects are created and managed by a container. For example, in a dependency injection container, the instantiation would look like this: new Company(new Service(new Repository)). This approach allows for easy and efficient use of services throughout the application.
