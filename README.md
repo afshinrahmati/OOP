@@ -54,18 +54,37 @@ Inheritance is a fundamental concept in object-oriented programming (OOP) that a
 SOLID is acronym that represents five key principle of object programming and design.
 they can help us to created software with understandable,flexible,maintainable
 
-## SRP<SINGLE RESPONSIBILITY PRINCIPLE>
+## 1. SRP<SINGLE_RESPONSIBILITY_PRINCIPLE>
 this Principle define that each class has just one Responsible.
 This principle helps in maintaining and understanding the code more efficiently. 
-## OCP<OPEN/CLOSE PRINCIPLE>
+## 2. OCP<OPEN/CLOSE PRINCIPLE>
 Software entities (class,function,module) should be open for extensions and close for modification.
 You should be able to extend a class's behavior without modifying its source code. // Polymorphism
-## LSP<LISKOV SUBSITUTION PRINCIPLE>
+## 3. LSP<LISKOV_SUBSITUTION_PRINCIPLE>
 that mean we have a method in parent class  and subclasses can use that method without change the name and ... just change the there operation
-## ISP<INTERFACE SEGREGATION PRINCIPLE>
+## 4. ISP<INTERFACE_SEGREGATION_PRINCIPLE>
 for each class we have an interface
-## DIP<DEPENDENCY INVERSION PRINCIPLE>
-: High-level modules should not depend on low-level modules. Both should depend on abstractions (e.g., interfaces). Abstractions should not depend on details. Details (concrete implementations) should depend on abstractions.
+## 5. DIP<DEPENDENCY_INVERSION_PRINCIPLE>
+High-level modules should not depend on low-level modules. Both should depend on abstractions (e.g., interfaces). Abstractions should not depend on details. Details (concrete implementations) should depend on abstractions.
+
+
+
+# Creational Design patterb
+are those pattern that focused on object creation mechanism and aiming to simplify the process of creating an object.
+
+### 1.singleton-pattern
+<h4>one time create an object(new ...) and use it every want.<br>
+1.instance a class just created one time.<br>
+2.instead of we create new new,new one time we create new and use it all environment we want.<br>
+3.what happen if we create new,new a lot from one class: you create a class before why you want to create that again and The work is expensive and non-optimal in terms of resource consumption .<br>
+4.use: like connected to databases one time.<br>
+5.singleton !=  AntiPattern<br>
+6.bad: not support single-responsibility,language multi-threading that happened Race-Condition
+that mean crate multi class
+
+
+
+
 # dependency injection
 --
 In object-oriented programming, instead of creating a new instance of a service every time it is needed, we use dependency injection to manage these dependencies more efficiently. When the application starts, all the required objects are created and managed by a container. For example, in a dependency injection container, the instantiation would look like this: new Company(new Service(new Repository)). This approach allows for easy and efficient use of services throughout the application.
