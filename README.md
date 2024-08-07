@@ -25,6 +25,7 @@ An instance f a class created with specifically defined data
 # Concept Of OOP
 
 ## 1.Encapsulation
+behind the  is not important for subclass what happen.
 Encapsulation is one of the fundamental principles of object-oriented programming (OOP) that is also applicable in 
 TypeScript. It refers to the bundling of data (variables) and methods (functions) that operate on the data into a 
 single unit or class. The primary goal of encapsulation is to restrict direct access to some of the 
@@ -47,8 +48,8 @@ object's components and protect the object's integrity by preventing outside int
 ## 3.Inheritance
 Inheritance is a fundamental concept in object-oriented programming (OOP) that allows a class (often called a child class or subclass) to inherit attributes and methods from another class (called a parent class or superclass). This mechanism promotes code reuse and a hierarchical class structure, making it easier to maintain and extend software.
 ## 4.Polymorphism
-
-
+children can change behavior parent and operation bud they can not change the method name ,... .
+Polymorphism is one of the core principles of object-oriented programming (OOP). It allows methods to do different things based on the object it is acting upon, even though they share the same name. This is typically achieved through method overriding.
 
 # SOLID
 SOLID is acronym that represents five key principle of object programming and design.
@@ -82,8 +83,19 @@ are those pattern that focused on object creation mechanism and aiming to simpli
 6.bad: not support single-responsibility,language multi-threading that happened Race-Condition
 that mean crate multi class
 
-
-
+### 2.factory-pattern    
+allow to superclass that decided what they want with intity
+The factory method pattern provides an interface for creating objects in a superclass but allows subclasses to alter the type of objects that will be created. The key idea is to delegate the object creation to subclasses.
+This pattern promotes loose coupling by eliminating the need to bind application-specific classes into the code.
+single responsibility
+### 3.prototype-pattern
+if we want to have several instance of an object(copy) if we want to each time new, new .... and if our code request to database and find it has a big cost on cpu and ...
+when we create an object we store that on a variable and check if i create we do not create again.
+* it is good for  Dependency injection.
+### 4.Builder
+create an object step by step we return the this and it is good for query builder.
+### 5.Abstract
+Aggregation is a group of separate factories that have a similar structure but are composed of different classes and operation
 
 # dependency injection
 --
