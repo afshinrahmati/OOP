@@ -88,15 +88,38 @@ allow to superclass that decided what they want with intity
 The factory method pattern provides an interface for creating objects in a superclass but allows subclasses to alter the type of objects that will be created. The key idea is to delegate the object creation to subclasses.
 This pattern promotes loose coupling by eliminating the need to bind application-specific classes into the code.
 single responsibility
-### 3.prototype-pattern
+### 3.prototype-pattern<clone>
 if we want to have several instance of an object(copy) if we want to each time new, new .... and if our code request to database and find it has a big cost on cpu and ...
 when we create an object we store that on a variable and check if i create we do not create again.
 * it is good for  Dependency injection.
-### 4.Builder
+### 4.Builder<return this>
 create an object step by step we return the this and it is good for query builder.
-### 5.Abstract
+find().select().where(),....
+### 5.Abstract-factory-pattern<same structure but different operation samsung and apple factory>
 Aggregation is a group of separate factories that have a similar structure but are composed of different classes and operation
 
+
+# Structural Design Patterns
+this pattern explain how to assemble and design an object or class into large structure,these structures flexible and efficient.
+### 1.Adapter<wrapper>
+it is look like Adapter  in wall we have 2 port but in 3 port and Adapter come and solves for us this problem,
+imagine we want to use a library and it structure is not appropriate for our project so we create a class and there we implment a structre that is good for our project.
+a method that send in there can send sms or email ,... 
+****
+### 2.Facade
+this is look like a garson ,he takes our older and we do not see behind the kitchen for make the food.
+facaade give us a simple inteface and hide the flexible.
+in code all the library are face they just give us a method and tehre do some operation and client can not see them.<hide complex>
+### 3.Bridge
+connect interface to abstrac class.
+ that lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation which can be developed independently of each other.
+ it has a Abstraction that client can use it.
+ when we use it that we have a lof of class that they wan tto work eache other like inhrentnet
+
+### 4.Composite
+some objects combine in structure like tree that can work alone and work together.
+we have 3 role in company developer and designer and manager ==> designer and developer have a same interface but manage plus the designer and developer interface has a interface
+for manager the employee
 # dependency injection
 --
 In object-oriented programming, instead of creating a new instance of a service every time it is needed, we use dependency injection to manage these dependencies more efficiently. When the application starts, all the required objects are created and managed by a container. For example, in a dependency injection container, the instantiation would look like this: new Company(new Service(new Repository)). This approach allows for easy and efficient use of services throughout the application.
