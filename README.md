@@ -119,7 +119,31 @@ connect interface to abstrac class.
 ### 4.Composite
 some objects combine in structure like tree that can work alone and work together.
 we have 3 role in company developer and designer and manager ==> designer and developer have a same interface but manage plus the designer and developer interface has a interface
-for manager the employee
+for manager the employee/
+### 5.Decorator
+let us to add some future to our object on runtime and dynamically.
+that is a structural pattern how to combine some object and class with each other.
+that allows to dynamically add behavior or responsibilities to an object without altering it structure.
+Decorator is a structural design pattern that lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.
+use: middleware
+### 6.Flyweight
+Flyweight design pattern, which is considered a structural pattern, is used in situations where we intend to optimize the amount of RAM memory.
+instead of we store all the data in each object if we have a common data we store them in one object.
+### 7.proxy
+let us to choice a substitute for an our object.
+between client and main class we have a class it is proxy.
+
+# behavioral
+Division of duties between each class.
+
+
+### .observer-pattern<update and sent it for all the child>
+The Observer pattern is a behavioral design pattern that defines a one-to-many dependency between objects.
+When the state of one object (the subject) changes, all its dependents (observers) are notified and updated automatically.
+use:This pattern is particularly useful for implementing distributed event-handling systems.
+
+
+
 # dependency injection
 --
 In object-oriented programming, instead of creating a new instance of a service every time it is needed, we use dependency injection to manage these dependencies more efficiently. When the application starts, all the required objects are created and managed by a container. For example, in a dependency injection container, the instantiation would look like this: new Company(new Service(new Repository)). This approach allows for easy and efficient use of services throughout the application.
