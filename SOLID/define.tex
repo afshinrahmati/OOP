@@ -1,0 +1,27 @@
+Your definitions are on the right track, but here’s a refined explanation of the **SOLID** principles:
+
+1. **S - Single Responsibility Principle (SRP)**:  
+   Each class should have only one responsibility or reason to change. This means every class or method should focus on a single task. If a class does more than one thing, it’s harder to modify or maintain.
+
+2. **O - Open/Closed Principle (OCP)**:  
+   Classes should be **open for extension but closed for modification**. This means you should be able to add new functionality to a class without modifying its existing code, often by using inheritance or interfaces.
+
+3. **L - Liskov Substitution Principle (LSP)**:  
+   Derived classes (subclasses) should be substitutable for their base (parent) classes without altering the correctness of the program. This means if you replace a parent class with a child class, the program should still function correctly, supporting safe and predictable behavior.
+
+4. **I - Interface Segregation Principle (ISP)**:  
+   A class should not be forced to implement interfaces it does not use. This means you should split large interfaces into smaller, more specific ones, so classes only implement what they actually need.
+
+5. **D - Dependency Inversion Principle (DIP)**:  
+   High-level modules should not depend on low-level modules. Instead, both should depend on abstractions (e.g., interfaces). Additionally, abstractions should not depend on details; details should depend on abstractions. This minimizes coupling and makes the code easier to test and maintain.
+
+### Summary
+Your definitions have the right ideas, but here are some improvements to clarify:
+
+- **Single Responsibility**: Each class or method has **only one responsibility**.
+- **Open/Closed**: **Open for extension** but **closed for modification**.
+- **Liskov Substitution**: Subclasses should be **interchangeable with base classes**.
+- **Interface Segregation**: Interfaces should be **specific to the needs of each class**.
+- **Dependency Inversion**: Classes should depend on **abstractions, not concrete implementations**.
+
+Let me know if you want more examples or clarification on any principle!
