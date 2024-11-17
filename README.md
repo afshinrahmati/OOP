@@ -144,6 +144,16 @@ use:This pattern is particularly useful for implementing distributed event-handl
 
 
 
+
+# Behavioral Design Patterns
+### 1. Strategy
+Strategy is a behavioral design pattern that lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.
+
+* you have a payment you can descript Meli Bank or saman Bank for switching
+* you have a map you can define 3 method for trip by byc or mototr or car
 # dependency injection
 --
-In object-oriented programming, instead of creating a new instance of a service every time it is needed, we use dependency injection to manage these dependencies more efficiently. When the application starts, all the required objects are created and managed by a container. For example, in a dependency injection container, the instantiation would look like this: new Company(new Service(new Repository)). This approach allows for easy and efficient use of services throughout the application.
+In object-oriented programming, instead of creating a new instance of a service every time it is needed, 
+we use dependency injection to manage these dependencies more efficiently. When the application starts, all the required objects are created and managed by a
+ container. For example, in a dependency injection container, the instantiation would look like this: new Company(new Service(new Repository)). 
+ This approach allows for easy and efficient use of services throughout the application.
