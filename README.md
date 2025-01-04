@@ -84,6 +84,7 @@ are those pattern that focused on object creation mechanism and aiming to simpli
 that mean crate multi class
 
 ### 2.factory-pattern    
+* Factory Method allows us to delegate the process of creating objects to child classes. Instead of directly creating an object from a specific class (using new), we use a factory method to create objects.
 allow to superclass that decided what they want with intity
 The factory method pattern provides an interface for creating objects in a superclass but allows subclasses to alter the type of objects that will be created. The key idea is to delegate the object creation to subclasses.
 This pattern promotes loose coupling by eliminating the need to bind application-specific classes into the code.
@@ -102,6 +103,7 @@ Aggregation is a group of separate factories that have a similar structure but a
 # Structural Design Patterns
 this pattern explain how to assemble and design an object or class into large structure,these structures flexible and efficient.
 ### 1.Adapter<wrapper>
+* فعال کردن همکاری بین رابط های ناسازگار.
 it is look like Adapter  in wall we have 2 port but in 3 port and Adapter come and solves for us this problem,
 imagine we want to use a library and it structure is not appropriate for our project so we create a class and there we implment a structre that is good for our project.
 a method that send in there can send sms or email ,... 
@@ -121,21 +123,25 @@ some objects combine in structure like tree that can work alone and work togethe
 we have 3 role in company developer and designer and manager ==> designer and developer have a same interface but manage plus the designer and developer interface has a interface
 for manager the employee/
 ### 5.Decorator
+* مسئولیت ها را به صورت پویا به اشیا اضافه کنید.
 let us to add some future to our object on runtime and dynamically.
 that is a structural pattern how to combine some object and class with each other.
 that allows to dynamically add behavior or responsibilities to an object without altering it structure.
 Decorator is a structural design pattern that lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.
 use: middleware
 ### 6.Flyweight
+* هزینه ایجاد و مدیریت بسیاری از اشیاء مشابه را کاهش دهید.
 Flyweight design pattern, which is considered a structural pattern, is used in situations where we intend to optimize the amount of RAM memory.
 instead of we store all the data in each object if we have a common data we store them in one object.
 ### 7.proxy
+* واسط یا نماینده برای دسترسی به یک شیء دیگر عمل می‌کند. این الگو به شما امکان می‌دهد که بدون تغییر در منطق اصلی یک شیء، دسترسی به آن را کنترل کنید.
 let us to choice a substitute for an our object.
 between client and main class we have a class it is proxy.
 
 # behavioral
 Division of duties between each class.
-
+# Command: 
+Encapsulate a request as an object, allowing parameterization and queuing.
 
 ### .observer-pattern<update and sent it for all the child>
 The Observer pattern is a behavioral design pattern that defines a one-to-many dependency between objects.
